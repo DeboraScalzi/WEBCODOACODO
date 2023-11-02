@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    background-color: #2f2f2d;
+}
+/* Texto Local*/
+.Titulo{
+  font-size: 2rem;
+  color: #e74c3c;
+}
+
+.grid-container > *{    
+    padding: 10px;
+    text-align: center;
+}
+
+/* Gakeria fotos*/
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.miniatura {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.miniatura img {
+  width: 250px;
+  height: 200px;
+}
+
+.ventana {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#imagenAmpliada {
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#descripcionImagen {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 18px;
+}
+/* fin carrousel*/
+
+/* Galeria Fotos*/
+.grid-container-photo{
+    padding: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    
+
+}
+/* Animacion*/
+.moverflecha{
+  animation-name: moverflecha;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes moverflecha{
+  from{
+    transform: translateX(0) ;
+  }
+  to{
+    transform: translateX(-100%);
+
+  }
+}
+
+.animation{
+  padding: 20px;
+  animation-name: cambiarcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes cambiarcolor{
+  from{
+    background-color: #cbecb9;
+  }
+  to{
+    background-color: #fff2c4;
+  } 
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefe6e;
+    border-radius: 4px;
+}
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.header{
+    grid-area: header;
+    margin: 0;
+    padding: 0;
+}
+/*menu navegacion*/
+
+.menunavbar a{
+    text-decoration: none;
+    color: azure;
+}
+.menunavbar a:hover{
+    color: #fefe6e;
+    font-weight: 600;
+}
+.menunavbar ul{
+    list-style: none;
+}
+
+.menunavbar li{
+    float: left;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+
+}
+/* Parrafos*/
+p{
+    text-align: left;
+}
+
+
+.navbar{
+    grid-area: navbar;
+    background-color: #377dee;
+    
+}
+.main{
+    grid-area: main;
+    background-color: rgb(221, 221, 221);
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #60a546;
+}
+/* Estilos para el footer */
+.footer{
+    grid-area: footer;
+    background-color: #2f2f2d;
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 20px; /* Añade espacio interno al footer */
+}
+    /* Estilos para el texto en el footer */
+.footer-text {
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1.7;   /* Interlineado */ 
+  }  
+  /* Estilos para el contenedor del contenido del footer */
+  .footer-content {
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  /* Estilos para el logo */
+  .footer-content img {
+    margin-right: 20px; /* Añade espacio a la derecha del logo para separarlo del texto */
+    max-width: 100px; /* Limita el ancho del logo si es necesario */
+  }
+
+.grid-container{
+    display: grid;
+    gap: 5 px;
+    grid-template: 
+    "header" /* 1fr */
+    "navbar" 0.3fr
+    "main" auto
+    "sidebar" 1fr
+    "footer" 0.5fr; 
+}
+
+/* Botones*/
+/* Estilos para botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 15px; /* Tamaño de fuente */
+    font-weight: bold; /* Grosor de fuente */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón secundario */
+  .secondary-button {
+    background-color: #e74c3c; /* Color de fondo secundario */
+    color: #ffffff; /* Color del texto */
+    
+  }
+  
+  /* Estilos para botón de contorno */
+  .outline-button {
+    background-color: transparent;
+    border: 2px solid #3498db; /* Color del borde */
+    color: #3498db; /* Color del texto */
+  }
+  
+  /* Estilos para botón en hover (cuando el mouse pasa sobre él) */
+  .button:hover {
+    opacity: 0.8; /* Reduce la opacidad en hover para dar feedback visual */
+  }
+
+  /* Estilos para el ícono de hamburguesa */
+.hamburguesa {
+    display: none; /* Oculta el ícono en pantallas grandes */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .barra {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el menú en pantallas grandes */
+  .menu {
+    list-style: none;
+  }
+  
+  /* Estilos para el menú en dispositivos móviles */
+  @media (max-width: 600px) {
+    .hamburguesa {
+      display: block; /* Muestra el ícono en dispositivos móviles */
+    }
+    
+    .menu {
+      display: none; /* Oculta el menú en dispositivos móviles */
+    }
+    
+    /* Estilos para mostrar el menú al hacer clic en el ícono de hamburguesa */
+    .menu.mostrando {
+      display: block;
+    }
+  }
+  
+@media (min-width: 600px){
+    .grid-container{
+        grid-template:
+        "header header" /* 1fr */
+        "navbar navbar" 0.3fr
+        "sidebar main" auto
+        "footer footer" 0px /
+         200px   auto;
+    }
+}
+
+@media (min-width: 900px){
+    .grid-container{
+        grid-template:
+        "header header header"   /* 0.5fr */
+        "navbar main   sidebar"  3fr
+        "footer footer footer"   0px /
+         200px   auto  300px ;
+    }
+}
+
+/* Código Franco, página 'Nuestro Hospedaje'*/
+
+h3{
+  margin-top: 5px;
+}
+
+.grid-container-cabana {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 10px; /* Espacio entre las columnas */
+}
+
+.grid-item-cabana {
+  text-align: center;
+}
+
+.fotos {
+  max-width: 100%; /* Las imágenes se ajustarán automáticamente al ancho del contenedor */
+  height: auto;
+  max-height: 400px; /* Establece una altura máxima para las imágenes */
+  margin-right: auto;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  /* Cuando la pantalla se achique a 767px o menos */
+  .grid-container-cabana {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+}
+
+p {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.fotos:hover{
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+div.centrado
+{
+    text-align: center;
+}
+
+div.centrado table 
+{
+    margin: 0 auto;
+    text-align: left;
+}
+
+.recom{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fffdfd;
+}
+
+.servicios{
+  text-decoration: none;
+  color: black;
+}
+
+.servicios:hover{
+  color: rgb(44, 43, 43);
+}
+
+input {
+  margin-right: 5px;
+}
+
+.rojo{
+  color: red;
+}

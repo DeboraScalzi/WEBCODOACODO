@@ -5,53 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chubut Explorer</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/6ab918dcc7.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/icono.png" type="image/x-icon">
-
 </head>
 <body class="grid-container">
-    <header class="header"><div><img src="img/header.png" style="width: 100%; "alt=""></div>
-        </header>
-        <nav class="navbar menunavbar">
-            <button class="hamburguesa" aria-label="Menú">
-              <span class="barra"></span>
-              <span class="barra"></span>
-              <span class="barra"></span>
-            </button>
-            <ul class="menu">
-              <li class="button secondary-button"><a href="index.html">Inicio</a></li>
-              <li class="button secondary-button"><a href="excursiones.html">Nuestra Excursiones</a></li>
-              <li class="button secondary-button"><a href="hospedaje.html">Nuestro Hospedaje</a></li>
-              <li class="button secondary-button"><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
+    <header class="header">
+        <div>
+            <img src="img/header.png" style="width: 100%; "alt="">
+        </div>
+    </header>
+    <nav class="navbar menunavbar">
+        <button class="hamburguesa" aria-label="Menú">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+        </button>
+        <ul class="menu">
+            <li class="button secondary-button"><a href="index.html">Inicio</a></li>
+            <li class="button secondary-button"><a href="excursiones.html">Nuestra Excursiones</a></li>
+            <li class="button secondary-button"><a href="hospedaje.html">Nuestro Hospedaje</a></li>
+            <li class="button secondary-button"><a href="reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
           
-    <aside class="sidebar"><div><h3 style="color: beige;"><i class="fa-solid fa-circle-info"></i> Servicios para tu estadía</h3></div><br>
-    <div style="background-color: rgb(162, 241, 155); padding: 10px;"><i class="fa-solid fa-bed"></i> <a href="hospedaje.html"> Cabañas Buena Vista</a></div> 
-</aside>
-    <article class="main"><div>
-        <div style="background-color: azure; padding: 10px;"><h1>Bienvenidos a Chubut Explorer, aventuras inolvidables</h1> </div>
-        <article><br>
-            <div><h2>Comarca Andina</h2></div>
-        <p style="padding: 10px;">La <b>comarca andina</b>, donde se ubica el <b> Parque Nacional Los Alerces</b>, en la provincia de Chubut, se encuentra enmarcada en una zona de increíble belleza natural. Desde enormes montañas nevadas, picos rocosos de gran espectacularidad, grandiosos lagos y caudalosos ríos, hasta la sequedad extrema de la estepa, las gigantescas cicatrices que los volcanes han dejado en la Patagonia y las geoformas mas increíbles… todo se conjuga en la misma zona geográfica. Partiendo desde las ciudades de Trevelin o Esquel (separadas por solo 22kms entre ellas), se puede acceder a una naturaleza que no deja de sorprender.</p>
-        </article><br>
-        
-        <article><h3>Nuestros Paisajes</h3>
-        <div class="grid-container-photo">
-            <div class="grid-item " style="background: url(img/galeria7.jpeg); background-size: cover;"></div>
-            <div class="grid-item" style="background: url(img/galeria2.jpeg);"></div>
-            <div class="grid-item"style="background: url(img/galeria1.jpeg);"></div>
-            <div class="grid-item"style="background: url(img/galeria4.jpeg);"></div>
-            <div class="grid-item"style="background: url(img/galeria5.jpeg);"></div>
-            <div class="grid-item"style="background: url(img/galeria6.jpeg);"></div>
-            <div class="grid-item"style="background: url(img/galeria3.jpeg);"></div>
-            <div class="grid-item"style="background: url(img/galeria8.jpg);"></div>
-            <div class="grid-item"style="background: url(img/galeria9.jpeg);"></div>
-        </div></article>
-    </div>
+    <aside class="sidebar">
+        <div>
+            <h3 style="color: beige;"><i class="fa-solid fa-circle-info"></i> Servicios para tu estadía</h3>
+        </div>
+        <br>
+        <div style="background-color: rgb(162, 241, 155); padding: 10px;">
+            <i class="fa-solid fa-bed" style="color: #000000;"></i> <a class="servicios"  href="hospedaje.html"> Cabañas Buena Vista</a>
+        </div> 
+        <div style="background-color: rgb(162, 241, 155); padding: 10px;">
+            <i class="fa-solid fa-car" style="color: #000000;"></i> <a class="servicios" href="https://www.expedia.com.ar/Alquiler-De-Autos-Trevelin.d6350961.Guia-de-Autos" target="_blank"> Alquiler de vehículos</a>
+        </div>
+        <div style="background-color: rgb(162, 241, 155); padding: 10px;">
+            <i class="fa-solid fa-utensils" style="color: #000000;"></i> <a class="servicios" href="https://trevelin.tur.ar/donde-comer/" target="_blank"> Gastronomía</a>
+        </div>  
+    </aside>
 
-<div> <article><h2>Donde estamos</h2><br>
-    <section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23310.70963725238!2d-71.4842265677519!3d-43.086886260400355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961dbbc323173289%3A0x99675354e0415645!2sTrevelin%2C%20Chubut!5e0!3m2!1ses!2sar!4v1693319865884!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section> </article></div></article><br>
+    <article class="main">
+        <div>
+            <div style="background-color: azure; padding: 10px;">
+                <h1 class="Titulo">Bienvenidos a Chubut Explorer, aventuras inolvidables</h1>
+            </div>
+            <article><br>
+            <div>
+                <h2><i class="fa-solid fa-mountain-sun "></i> Comarca Andina</h2>
+            </div>
+            <p style="padding: 10px;">La <b>comarca andina</b>, donde se ubica el <b> Parque Nacional Los Alerces</b>, en la provincia de Chubut, se encuentra enmarcada en una zona de increíble belleza natural. Desde enormes montañas nevadas, picos rocosos de gran espectacularidad, grandiosos lagos y caudalosos ríos, hasta la sequedad extrema de la estepa, las gigantescas cicatrices que los volcanes han dejado en la Patagonia y las geoformas mas increíbles… todo se conjuga en la misma zona geográfica. Partiendo desde las ciudades de Trevelin o Esquel (separadas por solo 22kms entre ellas), se puede acceder a una naturaleza que no deja de sorprender.</p>
+            </article><br>
+        
+            <article style="background-color: #e2fad1; padding-top: 10px;">
+                <h3><i class="fa-solid fa-camera"></i> Nuestros Paisajes</h3>
+                <div class="grid-container-photo">
+                    <div class="grid-item " style="background: url(img/galeria7.jpeg); background-size: cover;"></div>
+                    <div class="grid-item" style="background: url(img/galeria2.jpeg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria1.jpeg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria4.jpeg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria5.jpeg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria6.jpeg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria3.jpeg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria8.jpg);"></div>
+                    <div class="grid-item"style="background: url(img/galeria9.jpeg);"></div>
+                </div>
+            </article>
+        </div>
+
+        <div class="animation">  
+            <article>
+                <h2><i class="fa-solid fa-arrow-right fa-xl moverflecha"></i> Donde estamos </h2><br>
+                <section>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23310.70963725238!2d-71.4842265677519!3d-43.086886260400355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961dbbc323173289%3A0x99675354e0415645!2sTrevelin%2C%20Chubut!5e0!3m2!1ses!2sar!4v1693319865884!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </article>
+        </div>
+    </article>
+    <br>
 
     <footer class="footer">
         <div class="footer-content">
@@ -59,20 +90,9 @@
             <div class="footer-text">
                 <i class="fa-solid fa-location-dot"></i> Vicente Zota 623, Trevelín, Argentina <br>        
                 <i class="fa-solid fa-phone-flip"></i> 02945 15-41-1734 <br>        
-                <i class="fa-solid fa-square-envelope"></i> chubutexplorers@gmail.com</div></footer>   
-                
-                
-                <script>
-
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburguesa = document.querySelector(".hamburguesa");
-  const menu = document.querySelector(".menu");
-
-  hamburguesa.addEventListener("click", function () {
-    menu.classList.toggle("mostrando");
-  });
-});
-
-                </script>
+                <i class="fa-solid fa-square-envelope"></i> chubutexplorers@gmail.com
+            </div>
+        </div>
+    </footer>                
 </body>
 </html> 

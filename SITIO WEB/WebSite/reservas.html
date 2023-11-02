@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reservas | Chubut Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://kit.fontawesome.com/6ab918dcc7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/icono.png" type="image/x-icon">
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <img src="img/header.png" style="width: 100%; "alt="">
+    </header>
+    <nav class="navbar menunavbar">
+        <button class="hamburguesa" aria-label="Menú">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+        </button>
+        <ul class="menu">
+          <li class="button secondary-button"><a href="index.html">Inicio</a></li>
+          <li class="button secondary-button"><a href="excursiones.html">Nuestra Excursiones</a></li>
+          <li class="button secondary-button"><a href="hospedaje.html">Nuestro Hospedaje</a></li>
+          <li class="button secondary-button"><a href="reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <div>
+            <h3 style="color: beige;"><i class="fa-solid fa-circle-info"></i> Servicios para tu estadía</h3>
+        </div>
+        <br>
+        <div style="background-color: rgb(162, 241, 155); padding: 10px;">
+            <i class="fa-solid fa-bed" style="color: #000000;"></i> <a class="servicios"  href="hospedaje.html"> Cabañas Buena Vista</a>
+        </div> 
+        <div style="background-color: rgb(162, 241, 155); padding: 10px;">
+            <i class="fa-solid fa-car" style="color: #000000;"></i> <a class="servicios" href="https://www.expedia.com.ar/Alquiler-De-Autos-Trevelin.d6350961.Guia-de-Autos" target="_blank"> Alquiler de vehículos</a>
+        </div>
+        <div style="background-color: rgb(162, 241, 155); padding: 10px;">
+            <i class="fa-solid fa-utensils" style="color: #000000;"></i> <a class="servicios" href="https://trevelin.tur.ar/donde-comer/" target="_blank"> Gastronomía</a>
+        </div> 
+    </aside>
+    <section class="main">
+        <!-- <div> -->
+            <div style="background-color: azure; padding: 10px;">
+                <h1>Reservas</h1>
+            </div>
+            <fieldset> 
+                <legend>
+                    <h3><em> Información a tener en cuenta</em></h3>
+                </legend>
+                <p> Horario de check in: a partir de las 13 hs – Horario de check out 11 hs.
+                 Cancelaciones: Ud. puede realizar la modificación de la reserva hasta 72 hs antes del arribo previsto, sin penalización, coordinando una nueva fecha. La seña es NO reembolsable.
+                </p>
+            </fieldset>
+            <form action="javascript:void(0)">
+                <fieldset>
+                    <legend>
+                        <h3><em>Ingrese los datos de su reserva</em></h3>
+                    </legend> <br>
+                    <div class="centrado">
+                        <table cellspacing="10">
+                            <tr>
+                                <th align="center">Check IN</th>
+                                <th align="center">Check OUT</th>
+                                <th align="center">Cantidad adultos</th>
+                                <th align="center">Cantidad menores</th>
+                            </tr>
+                            <td><input type="date" id="checkIn" class="cajas"> </td>
+                            <td><input type="date" id="checkOut" class="cajas"></td>
+                            <td><input type="number" id="adultos" class="cajas" tabindex="0"></td>
+                            <td><input type="number" id="menores" class="cajas" tabindex="0"></td>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><br>
+                        <h3><em>Datos personales de la persona a cargo de la reserva</em></h3>
+                    </legend> <br>  
+                    <label for="firstname"> <b>Nombre/s:</b> </label>
+                    <input type="text" id="firstname" placeholder="Ingrese su/s nombre/s aquí">
+                    <label for="lastname"> <b>Apellido/s:</b> </label>
+                    <input type="text" id="lastname" placeholder="Ingrese su/s apellido/s aquí"><br><br>
+                    <label for="email"> <b>Email: </b></label>
+                    <input type="text" id="email" placeholder="Ingrese su email aquí">
+                    <label for="telefono"> <b>Teléfono:</b> </label>
+                    <input type="text" id="telefono" placeholder="Ingrese su teléfono aquí">
+                    <br><br>
+                </fieldset>
+                <br>
+                <button class="button" onclick="validar()">Enviar</button>
+                <!-- <input type="submit" value= "Enviar" class="button"> -->
+                <br> <br>
+                <span id="aviso"></span>
+            </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="img/chubutexplorers_logo.png" width="100px" alt="">
+            <div class="footer-text">
+                <i class="fa-solid fa-location-dot"></i> Vicente Zota 623, Trevelín, Argentina <br>        
+                <i class="fa-solid fa-phone-flip"></i> 02945 15-41-1734 <br>        
+                <i class="fa-solid fa-square-envelope"></i> chubutexplorers@gmail.com
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
